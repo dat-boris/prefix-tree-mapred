@@ -49,21 +49,21 @@ Here is an example:
 Anonymised Test data
 --------------------
 
-The test data is avaliable at
+The test data is available at
 
     sequence.gz
 
 It contains a list of:
 
-object name|item-id|time
+    object name  \t  item-id  \t  time
 
 Which is a list of hash of original data of set of sequence.
 
 ## Input parameter
 
-The algorithm takes the following paremater
+The algorithm takes the following parameter
 
-* _minPrefixLength_ - minimal lenght of prefix generated
+* _minPrefixLength_ - minimal length of prefix generated
 * _maxExampleCount_ - maximum number of Examples to include
 * _minCount_ - minimum number of count for the objects
 
@@ -72,11 +72,10 @@ Expected output
 
 We expect a final list of output of:
 
-prefix|exampleitem|count
+    prefix  \t  example-item  \t  count
 
 
-
-Bouns: Parallel generation of K-ary tree
+Bonus: Parallel generation of K-ary tree
 ---------------------------------------
 
 Constructing a K-ary tree out of paths.  For each next steps, construct a graph of where things are listening.
@@ -115,10 +114,13 @@ A non-mapreduce algorithm: K-ary tree - http://stackoverflow.com/questions/10055
 * Other implmentation of Prefix span algorithm - https://github.com/gauravsc/PrefixTree-Map-Reduce using mahour
 
 
-### Other map reduce examples
+### Other mapreduce examples
 
 * N-gram generation -  Computing n-Gram Statistics in MapReduce -  https://www.mpi-inf.mpg.de/~kberberi/publications/2013-edbt2013.pdf
 * Example Graph tarversal algorithm in MapReduce - http://www.johnandcailin.com/blog/cailin/breadth-first-graph-search-using-iterative-map-reduce-algorithm
+
+
+
 
 
 
